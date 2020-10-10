@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Dog_owner.destroy_all
+DogOwner.destroy_all
 Dog.destroy_all
 Owner.destroy_all
 
@@ -19,9 +19,9 @@ ian = Owner.create(name: "Ian")
 claire = Owner.create(name: "Claire")
 kelsey = Owner.create(name: "Kelsey")
 
-Dog_owner.create(dog: ollie, owner: rachel)
-Dog_owner.create(dog: ollie, owner: ian)
-Dog_owner.create(dog: moose, owner: rachel)
-Dog_owner.create(dog: moose, owner: claire)
-Dog_owner.create(dog: japhy, owner: kelsey)
+DogOwner.create(dog: ollie, owner: rachel)
+DogOwner.create(dog: ollie, owner: ian)
+DogOwner.create(dog: moose, owner: rachel)
+DogOwner.create(dog: moose, owner: claire)
+DogOwner.create(dog: japhy, owner: kelsey)
 
