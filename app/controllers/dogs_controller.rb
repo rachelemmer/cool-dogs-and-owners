@@ -15,4 +15,16 @@ class DogsController < ApplicationController
         render json: @dog
     end
 
+    def update
+        @dog = Dog.find(params[:id])
+        @dog.update(name: params[:name])
+        render json: @dog
+    end
+
+    def destroy 
+        @dog = Dog.find(params[:id])
+        @dog.destroy 
+        render json: "Successfully deleted."
+    end 
+
 end
