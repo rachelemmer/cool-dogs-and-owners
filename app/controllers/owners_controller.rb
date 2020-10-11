@@ -15,4 +15,16 @@ class OwnersController < ApplicationController
         render json: @owner
     end
 
+    def update
+        @owner = Owner.find(params[:id])
+        @owner.update(name: params[:name])
+        render json: @owner
+    end
+
+    def destroy 
+        @owner = Owner.find(params[:id])
+        @owner.destroy 
+        render json: "Successfully deleted."
+    end 
+
 end
